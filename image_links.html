@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, main {
+            padding: 20px;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+        nav {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            align-items: center;
+        }
+        img {
+            width: 250px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(200px, 2fr));
+            grid-gap: 10px;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+        }
+        .navLinks:hover{
+            color:chocolate;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Images</h1>
+</header>
+
+<nav>
+    <a class="navLinks" href="#home">Home</a> | 
+    <a class="navLinks" href="#gallery">Gallery</a> | 
+    <a class="navLinks" href="#menu">Menu</a>
+</nav>
+
+<section id="home">
+    <h2>Home</h2>
+    <p>Welcome to our website! Click the robot image bellow to explore more tech images:</p>
+    <a href="https://pixabay.com/illustrations/ai-generated-robot-technology-8015425/" target="_blank">
+        <figure>
+            <img src="./techimg.jpg" 
+            alt="A Robot Image" title="Click this Robot image" style="max-width: 100%;">
+            <figcaption>This is a picture of Robot</figcaption>
+        </figure>
+    </a>
+
+</section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+    <p>Check out these nature images:</p>
+    <div class="gallery">
+        <a href="https://pixabay.com/photos/avenue-trees-path-sunbeams-sunrays-815297/" target="_blank">
+            <img src="avenue.jpg" alt="Avenue trees path">
+        </a>
+        <a href="https://pixabay.com/photos/polynesia-french-polynesia-tahiti-3021072/" target="_blank">
+            <img src="./polynesia.jpg" alt="polynesia">
+        </a>
+        <a href="https://pixabay.com/photos/hintersee-lake-mountains-nature-3601004/" target="_blank">
+            <img src="./hintersee.jpg" alt="hintress lake">
+        </a>
+        <a href="https://pixabay.com/photos/elephant-watering-hole-baby-elephant-2380009/" target="_blank">
+            <img src="./elephant.jpg" alt="hintress lake">
+        </a>
+    </div>
+</section>
+
+<section id="menu">
+    <h2>Menu</h2>
+    <p>Choose from our delicious menu:</p>
+    <ul>
+        <li><a href="https://pixabay.com/photos/ukrainian-dill-potatoes-potatoes-2652561/" target="_blank">Ukrainian dill Potatoes</a></li>
+        <li><a href="https://pixabay.com/photos/biryani-rice-food-indian-cuisine-1141444/" target="_blank">Biryan Rice</a></li>
+        <li><a href="https://pixabay.com/photos/duck-roast-duck-roasted-duck-2957809/" target="_blank">roast duck</a></li>
+    </ul>
+
+    
+</section>
+<main>
+</main>
+
+</body>
+</html>
